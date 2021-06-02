@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .link{
+        @apply cursor-pointer hover:underline font-extrabold md:text-sm
+    }
+
+    .button{
+        @apply p-2 text-xs bg-gradient-to-b from-blue-200 to-blue-400 border-blue-300 rounded-sm focus:ring-2 focus:outline-none focus:ring-blue-500 active:from-blue-500
+    }
+}
+
