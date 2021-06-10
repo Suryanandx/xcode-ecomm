@@ -3,6 +3,7 @@ import Header from "../components/Header"
 import { db } from "../firebase"
 import moment from 'moment'
 import Order from "../components/Order"
+import Footer from "../components/Footer"
 
 function orders({orders}) {
     const [session] = useSession()
@@ -36,6 +37,7 @@ function orders({orders}) {
                         }
                     </div>
             </main>
+            <Footer/>
         </div>
     )
 }

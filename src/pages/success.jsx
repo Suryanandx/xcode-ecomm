@@ -1,6 +1,7 @@
 import Header from '../components/Header'
 import {CheckCircleIcon} from '@heroicons/react/solid'
 import { useRouter } from 'next/router'
+import Footer from '../components/Footer'
 
 function success() {
     const router = useRouter()
@@ -21,7 +22,7 @@ function success() {
                     <button onClick={() => router.push('/orders') } className='button mt-8 font-bold'>Go to my orders</button>
                 </div>
             </main>
-            
+           <Footer/>
         </div>
     )
 }

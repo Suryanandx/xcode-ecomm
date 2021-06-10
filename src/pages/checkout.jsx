@@ -6,6 +6,7 @@ import Currency from 'react-currency-formatter'
 import { useSession } from "next-auth/client"
 import { loadStripe } from "@stripe/stripe-js"
 import axios from "axios"
+import Footer from "../components/Footer"
 
 function Checkout() {
     const items = useSelector(selectItems)
@@ -86,6 +87,7 @@ function Checkout() {
                 }
             </div>
            </main>
+           <Footer/>
         </div>
     ) }
 
